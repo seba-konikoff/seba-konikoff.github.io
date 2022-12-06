@@ -1,4 +1,4 @@
-import ListGroup from 'react-bootstrap/ListGroup';
+import { ListGroup } from 'react-bootstrap';
 
 interface SidebarElement {
   nombre: string
@@ -12,9 +12,9 @@ interface SidebarProps {
 function Sidebar({ elements }: SidebarProps)  {
   return (
     <div>
-      <a>
+      <p>
         Curriculum Vitae de Sebastian Konikoff
-      </a>
+      </p>
       <ListGroup variant="flush" as="ul">
         {elements.map(element =>
             <ListGroup.Item 
